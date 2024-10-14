@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c5a2f586ad.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #centDiv{
+            background-color: rgb(32, 36, 37);
+            width: 40%;
+            height: 700px;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+            
+        }
+        input{
+            width: 70%;
+            height: 60px;
+            background-color: honeydew;
+            border: solid 2px whitesmoke;
+            border-radius: 30px;
+            border: none;
+        }
+
+        button{
+            width: 100px;
+            height: 55px;
+            background-color: lightslategrey;
+            border-radius: 50px;
+            color: white;
+            margin-top: 50px;
+            border: none;
+            
+        }
+
+        .div2 input{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="backG">
+   
+
+
+        <div id="centDiv">
+
+            <div>
+                <input type="text"  id="input1" value="fuck shit ass asshole nigga"></div>
+            
+    
+            <button id="bnt" onclick="show()">censor
+    
+            </button>
+
+            
+
+            <div class="div2">
+                <input type="text" id="input2" value=""></div>
+
+
+
+            <div>
+                <button><i class="fa-solid fa-rotate-right" id="bnt2"></i></button>
+            </div>
+    
+    
+        </div>
+
+
+    </div>
+
+   
+    
+</body>
+</html>
+
+<script>
+    let backGround = document.getElementById('backG')
+    console.log(backGround);
+
+
+    backGround.style.backgroundImage = "url(flames.avif)"
+    backGround.style.height = "100vh"
+    backGround.style.width = "100%"
+    backGround.style.backgroundSize = "contain"
+    backGround.style.paddingTop = "100px"
+
+
+    // let cent = document.getElementById('centDiv')
+    // console.log(cent);
+
+    // cent.style.backgroundColor = "grey"
+    // cent.style.height = "500px"
+    // cent.style.width = "20%"
+    // cent.style.margin = 'auto'
+
+    
+    let inputTag1 = document.getElementById('input1')
+    
+    
+    let inputTag2 = document.getElementById('input2')
+
+    function show() {
+        // console.log(inputTag1);
+        // console.log(inputTag2);
+
+        console.log(inputTag2.value = inputTag1.value);
+        
+        let inp = inputTag1.value
+        inp = inp.replaceAll("fuck" , "****").replaceAll('shit' , '****')
+        input2.value = inp
+        
+        
+    }
+
+    
+     
+     
+       
+       
+       let but = document.getElementById('bnt2')
+       
+    
+    
+    
+
+
+
+
+    
+</script>
